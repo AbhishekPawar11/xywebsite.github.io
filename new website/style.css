@@ -1,0 +1,137 @@
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(117, 197, 52);
+    line-height: 75px;
+    padding: 0px 12px;
+}
+nav .logo{
+    float: left;
+}
+ nav ul{
+
+    float: right;
+
+ }
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+nav ul li a:hover{
+    color: #000000;
+}
+nav ul .act{
+    color: #000000;
+}
+.checkbtn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+    padding: 0px 10px;
+}
+#check{
+    display: none;
+
+}
+
+ @media screen and (max-width : 990px ){
+  nav{
+      padding: 0px 25px;
+  }
+  .checkbtn{
+      display: block;
+
+  }
+  nav ul{
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top:75px;
+      background-color: rgb(53, 219, 81);
+       left: 0;
+      text-align: center;
+      transition:0.4s ease ;
+  }
+  nav ul li {
+      display: block;
+      margin: 60px 0px;
+      line-height: 20px;
+
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+   .container{
+       display: flex;
+       text-align: center;
+
+   }
+   
+
+ }
+ .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    /* background: skyblue; */
+    margin-top: 20px;
+    position: absolute;
+    
+    right: px;
+    top: 200px
+}
+
+.container ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container ul li {
+    float: left;
+    list-style: none;
+    width: 20%;
+    height: 300px;
+    background: red;
+    margin: 20px 0px 20px 55px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+
+.container ul li:hover {
+    opacity: 0.8;
+}
+
+.container ul li .bottom {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: blue;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+} 
+ .background{
+     background-color: aqua;
+ }
+ .foot {
+    /* border: solid 2px red; */
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    background: rgb(100, 160, 184);
+    color: white;
+    position: absolute;
+    bottom: 0.5px;
+    /* right: 18%; */
+    width: 100%;
+    height: 50px;
+    text-align: center;}
